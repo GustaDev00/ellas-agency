@@ -1,13 +1,20 @@
 import styled from "styled-components";
-import { mediaMaxWidth } from "@/utils/media-query";
-import _Link from "next/link";
 
-export const Link = styled(_Link)`
-  svg {
-    width: 22.5rem;
+export const Logo = styled.div`
+  position: relative;
+  color: #000;
+  text-align: center;
+`;
 
-    ${mediaMaxWidth("mobile")`
-      width: 14rem;
-    `}
-  }
+export const Name = styled.div`
+  font-size: 7rem;
+  font-weight: 800;
+  letter-spacing: -0.4rem;
+  line-height: 60%;
+`;
+
+export const Small = styled.div`
+  font-size: 1.4rem;
+  font-family: var(--chocolates);
+  text-transform: uppercase;
 `;
